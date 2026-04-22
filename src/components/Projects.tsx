@@ -11,8 +11,8 @@ const PROJECTS = [
     icon: 'fas fa-home',
     accent: '#00f5ff',
     links: {
-      demo: 'Live Link',
-      code: 'Github: Client | Server',
+      demo: 'https://home-nest-beta.vercel.app/',
+      code: 'https://github.com/engsanjid/HomeNest',
     },
   },
   {
@@ -24,8 +24,8 @@ const PROJECTS = [
     icon: 'fas fa-gamepad',
     accent: '#b000ff',
     links: {
-      demo: 'Live Link',
-      code: 'Github: Client',
+      demo: 'https://cool-salmiakki-fd45d4.netlify.app/',
+      code: 'https://github.com/engsanjid/GameHub',
     },
   },
 ];

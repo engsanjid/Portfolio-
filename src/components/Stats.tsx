@@ -2,7 +2,7 @@ import { useCounter } from '../hooks/useCounter';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const STATS = [
-  { target: 2, suffix: '', label: 'Projects Completed', icon: 'fas fa-code-branch' },
+  { target: 5, suffix: '', label: 'Projects Completed', icon: 'fas fa-code-branch' },
   { target: 1,  suffix: '+', label: 'Years Experience',   icon: 'fas fa-calendar-alt' },
   { target: 10, suffix: '+', label: 'Technologies Used',  icon: 'fas fa-layer-group' },
   { target: 100, suffix: '%', label: 'Dedication', icon: 'fas fa-star' },

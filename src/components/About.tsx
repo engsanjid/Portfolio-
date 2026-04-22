@@ -69,7 +69,7 @@ export default function About() {
             </div>
 
         <a
-  href="/CV.pdf"
+  href="/Sanjid Resume - Google Docs.pdf"
   download
   className="btn-primary inline-flex w-fit mt-2"
 >
