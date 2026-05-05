@@ -1,6 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-
+import emailjs from '@emailjs/browser';
 interface FormState {
   name: string;
   email: string;
@@ -30,8 +30,8 @@ const CONTACT_INFO = [
   {
     icon: 'fab fa-linkedin',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/md-sanjid-islam-146472308',
-    href: 'https://www.linkedin.com/in/md-sanjid-islam-146472308/',
+    value: 'linkedin.com/in/md-sanjid-islam/',
+    href: 'https://www.linkedin.com/in/md-sanjid-islam/',
   },
   {
     icon: 'fas fa-map-marker-alt',
@@ -56,26 +56,42 @@ export default function Contact() {
     setError('');
   };
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    if (!form.name || !form.email || !form.message) {
-      setError('Please fill in all required fields.');
-      return;
-    }
-    const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRx.test(form.email)) {
-      setError('Please enter a valid email address.');
-      return;
-    }
+ 
 
-    setSending(true);
-    await new Promise((res) => setTimeout(res, 1600));
-    setSending(false);
+const handleSubmit = async (e: FormEvent) => {
+  e.preventDefault();
+  if (!form.name || !form.email || !form.message) {
+    setError('Please fill in all required fields.');
+    return;
+  }
+  const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRx.test(form.email)) {
+    setError('Please enter a valid email address.');
+    return;
+  }
+
+  setSending(true);
+  try {
+    await emailjs.send(
+      'service_kaswqho',   // ← আপনার Service ID
+      'template_a2xrz2l',  // ← আপনার Template ID
+      {
+        from_name:  form.name,
+        from_email: form.email,
+        subject:    form.subject || 'No Subject',
+        message:    form.message,
+      },
+      'og_bwRgqBjO_RvGtJ'  // ← আপনার Public Key
+    );
     setSent(true);
     setForm({ name: '', email: '', subject: '', message: '' });
     setTimeout(() => setSent(false), 5000);
-  };
-
+  } catch (err) {
+    setError('Failed to send message. Please try again.');
+  } finally {
+    setSending(false);
+  }
+};
   return (
     <section id="contact" className="relative py-24 lg:py-32">
       <div

@@ -6,7 +6,7 @@ const INFO_ITEMS = [
   { icon: 'fas fa-phone',          label: 'Phone',       value: '+8801745532902' },
   { icon: 'fas fa-envelope',       label: 'Email',       value: 'mdsanjidi36@gmail.com' },
   { icon: 'fab fa-github',         label: 'GitHub',      value: 'github.com/engsanjid' },
-  { icon: 'fab fa-linkedin',       label: 'LinkedIn',    value: 'linkedin.com/in/md-sanjid-islam-146472308' },
+  { icon: 'fab fa-linkedin',       label: 'LinkedIn',    value: 'linkedin.com/in/md-sanjid-islam/' },
 ];
 
 export default function About() {
@@ -69,7 +69,7 @@ export default function About() {
             </div>
 
         <a
-  href="/Sanjid Resume - Google Docs.pdf"
+  href="/Sanjid Resume.pdf"
   download
   className="btn-primary inline-flex w-fit mt-2"
 >

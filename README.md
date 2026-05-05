@@ -214,7 +214,7 @@ This project is open source and available under the [MIT License](LICENSE).
 **Md Sanjid Islam**
 - 📧 Email: mdsanjidi36@gmail.com
 - 📱 Phone: +8801745532902
-- 🔗 LinkedIn: [Md Sanjid Islam](https://www.linkedin.com/in/md-sanjid-islam-146472308/)
+- 🔗 LinkedIn: [Md Sanjid Islam](https://www.linkedin.com/in/md-sanjid-islam//)
 - 💻 GitHub: [engsanjid](https://github.com/engsanjid)
 - 📍 Location: Dhaka, Bangladesh
 

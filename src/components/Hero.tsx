@@ -153,7 +153,7 @@ export default function Hero() {
             <div className="flex items-center gap-6 pt-2">
               {[
                 { icon: 'fab fa-github', href: 'https://github.com/engsanjid', label: 'GitHub' },
-                { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/md-sanjid-islam-146472308/', label: 'LinkedIn' },
+                { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/md-sanjid-islam//', label: 'LinkedIn' },
                 { icon: 'fas fa-envelope', href: 'mailto:mdsanjidi36@gmail.com', label: 'Email' },
               ].map((s) => (
                 <a
