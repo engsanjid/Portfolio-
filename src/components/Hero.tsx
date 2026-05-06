@@ -102,7 +102,7 @@ export default function Hero() {
                 className="text-xl md:text-2xl font-medium mt-3"
                 style={{ color: 'var(--text-secondary)' }}
               >
-                Junior Full Stack Web Developer
+                Full Stack Developer
                 <span
                   className="ml-2 px-2 py-0.5 rounded text-sm"
                   style={{

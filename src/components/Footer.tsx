@@ -19,7 +19,7 @@ export default function Footer() {
               className="text-xs tracking-widest"
               style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}
             >
-              Junior Full Stack Web Developer
+              Full Stack Developer
             </span>
           </div>
 

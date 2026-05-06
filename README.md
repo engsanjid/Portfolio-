@@ -9,7 +9,7 @@
 </div>
 
 <div align="center">
-  <h3>✨ Junior Full Stack Web Developer | MERN Stack Enthusiast ✨</h3>
+  <h3>✨ Full Stack Developer | MERN Stack Enthusiast ✨</h3>
   <p>Building scalable web applications with modern technologies</p>
 </div>
 
@@ -17,7 +17,7 @@
 
 ## 🌟 About This Portfolio
 
-A modern, responsive portfolio website showcasing my journey as a **Junior Full Stack Web Developer**. Built with cutting-edge technologies and featuring a sleek dark theme with neon accents.
+A modern, responsive portfolio website showcasing my journey as a **Full Stack Developer**. Built with cutting-edge technologies and featuring a sleek dark theme with neon accents.
 
 ### 🎯 **Live Demo**
 🔗 **[View Portfolio](https://sanjid-portfolio.vercel.app/)**

@@ -46,7 +46,7 @@ export default function About() {
                  Md Sanjid Islam
                 </h3>
                 <p className="text-sm" style={{ color: 'var(--cyan)', fontFamily: 'var(--font-mono)' }}>
-                  Junior Full Stack Web Developer
+                  Full Stack Developer
                 </p>
               </div>
             </div>
