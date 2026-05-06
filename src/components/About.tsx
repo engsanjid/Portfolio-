@@ -69,7 +69,7 @@ export default function About() {
             </div>
 
         <a
-  href="/Sanjid Resume.pdf"
+  href="/public/Resume Sanjid.pdf"
   download
   className="btn-primary inline-flex w-fit mt-2"
 >

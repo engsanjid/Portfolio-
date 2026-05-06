@@ -497,7 +497,7 @@ a, button, input, textarea, [role="button"] {
   min-width: 0;
 }
 
-/* @media (max-width: 640px) {
+@media (max-width: 640px) {
   .btn-primary,
   .btn-ghost {
     width: 100%;
@@ -505,21 +505,9 @@ a, button, input, textarea, [role="button"] {
     padding-left: 18px;
     padding-right: 18px;
   }
-} */
-/* ===== MOBILE OVERFLOW FIX ===== */
-@media (max-width: 640px) {
-  .reveal-left,
-  .reveal-right {
-    opacity: 0;
-    transform: translateY(20px);  /* X এর বদলে Y */
-  }
-
-  .reveal-left.visible,
-  .reveal-right.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
+
+
 
 section {
   overflow-x: hidden;
