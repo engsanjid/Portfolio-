@@ -71,10 +71,14 @@ export default function Hero() {
       className="relative min-h-screen flex items-center"
       style={{ paddingTop: '80px' }}
     >
-      <div className="max-w-6xl mx-auto px-6 w-full py-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="space-y-6">
-            <div className="flex items-center gap-4 flex-wrap">
+     <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full py-16 sm:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+          {/* ── Left column ── */}
+        <div className="flex flex-col items-center lg:items-start space-y-6 text-center lg:text-left w-full">
+
+            {/* Status + Clock */}
+            <div className="flex items-center justify-center lg:justify-start gap-4 flex-wrap">
               <div className="status-badge">
                 <span className="status-dot" />
                 Available for Work
@@ -82,7 +86,8 @@ export default function Hero() {
               <LiveClock />
             </div>
 
-            <div>
+            {/* Name block */}
+            <div className="text-center lg:text-left">
               <p
                 className="font-mono text-sm tracking-widest mb-3"
                 style={{ color: 'var(--cyan-dim)', fontFamily: 'var(--font-mono)' }}
@@ -99,7 +104,7 @@ export default function Hero() {
               </h1>
 
               <h2
-                className="text-xl md:text-2xl font-medium mt-3"
+                className="text-xl md:text-2xl font-medium mt-3 text-center lg:text-left"
                 style={{ color: 'var(--text-secondary)' }}
               >
                 Full Stack Developer
@@ -117,14 +122,16 @@ export default function Hero() {
               </h2>
             </div>
 
-            <p className="text-base leading-relaxed max-w-lg" style={{ color: 'var(--text-secondary)' }}>
+            {/* Bio */}
+            <p className="text-base leading-relaxed max-w-lg text-center lg:text-left mx-auto lg:mx-0" style={{ color: 'var(--text-secondary)' }}>
               Seeking a Full Stack Developer role to build{' '}
               <span style={{ color: 'var(--cyan)' }}>modern web applications</span> using Next.js, React, Node.js,
               and MongoDB while growing within a collaborative team from{' '}
               <span style={{ color: 'var(--teal)' }}>Dhaka, Bangladesh</span>.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-2">
+            {/* Buttons */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
               <button
                 className="btn-primary"
                 onClick={() => scrollToSection('projects')}
@@ -150,7 +157,8 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="flex items-center gap-6 pt-2">
+            {/* Social icons */}
+            <div className="flex items-center justify-center lg:justify-start gap-6 pt-2">
               {[
                 { icon: 'fab fa-github', href: 'https://github.com/engsanjid', label: 'GitHub' },
                 { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/md-sanjid-islam/', label: 'LinkedIn' },
@@ -185,7 +193,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="terminal-window">
+          {/* ── Right column: Terminal ── */}
+          <div className="terminal-window w-full">
             <div className="terminal-header">
               <span className="terminal-dot" style={{ background: '#ff5f57' }} />
               <span className="terminal-dot" style={{ background: '#febc2e' }} />
@@ -212,6 +221,7 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2">
           <p className="text-xs tracking-widest" style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}>
             SCROLL

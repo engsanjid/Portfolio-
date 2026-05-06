@@ -28,8 +28,8 @@ export default function Footer() {
             style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}
           >
             &copy; {year} Md Sanjid Islam — Built with{' '}
-            <span style={{ color: 'var(--cyan)' }}>Next.js</span> &amp;{' '}
-            <span style={{ color: 'var(--purple)' }}>passion</span>
+            <span style={{ color: 'var(--cyan)' }}>Next.js</span> 
+<span className="hidden md:inline" style={{ color: 'var(--purple)' }}> <span className="text-gray-600">&</span> passion</span>
           </p>
 
           <button

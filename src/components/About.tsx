@@ -25,7 +25,7 @@ export default function About() {
           <div className="neon-divider max-w-xs mx-auto mt-4" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div ref={leftRef} className="reveal-left glass-card p-8 space-y-6">
             <div className="flex items-center gap-3 mb-2">
               <div

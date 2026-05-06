@@ -4,8 +4,14 @@ export default function CustomCursor() {
   const outerRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
   const [hovered, setHovered] = useState(false);
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const hoverMedia = window.matchMedia('(hover: hover)');
+    if (!hoverMedia.matches) return;
+
+    setEnabled(true);
     let outerX = 0, outerY = 0;
     let innerX = 0, innerY = 0;
     let rafId: number;
@@ -55,6 +61,8 @@ export default function CustomCursor() {
       });
     };
   }, []);
+
+  if (!enabled) return null;
 
   return (
     <>

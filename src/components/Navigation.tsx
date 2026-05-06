@@ -50,7 +50,7 @@ export default function Navigation() {
           borderBottom: scrolled ? '1px solid rgba(0,245,255,0.08)' : 'none',
         }}
       >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between w-full">
           <a
             href="#home"
             onClick={(e) => { e.preventDefault(); handleNavClick('#home'); }}

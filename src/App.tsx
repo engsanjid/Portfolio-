@@ -11,7 +11,7 @@ import Footer      from './components/Footer';
 
 export default function App() {
   return (
-    <div style={{ background: 'var(--bg-primary)', minHeight: '100vh', position: 'relative' }}>
+    <div style={{ background: 'var(--bg-primary)', minHeight: '100vh', position: 'relative',overflowX: 'hidden', width: '100%' }}>
       <Background />
       <CustomCursor />
       <Navigation />
