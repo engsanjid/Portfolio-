@@ -115,7 +115,7 @@ export default function About() {
                       {item.label}
                     </p>
                     <p
-                      className="text-sm font-medium truncate"
+                      className="text-sm font-medium text-wrap break-words "
                       style={{ color: item.href ? 'var(--cyan)' : 'var(--text-primary)' }}
                     >
                       {item.value}
