@@ -6,8 +6,8 @@ const PROJECTS = [
     number: '01',
     title: 'HomeNest — Full-Stack Real Estate Platform',
     description:
-      'Built a real estate platform with property browsing, search, filter, and review features. Implemented secure authentication (Email/Password + Google) with protected routes and full CRUD for property owners. Added ratings & reviews system with a dedicated "My Ratings" dashboard and dynamic featured listings. Developed REST APIs with Node.js, Express & MongoDB, plus a responsive UI with dark/light mode and custom alerts.',
-    tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Firebase'],
+      'Built a real estate platform with property browsing, search, and filtering features. Implemented Firebase authentication with protected routes and developed full CRUD functionality for property listings. Designed a responsive UI with Next.js, Tailwind CSS, DaisyUI and integrated ratings & reviews with a personalized dashboard.',
+    tags: ['Next.js', 'React', 'Firebase Auth', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
     icon: 'fas fa-home',
     accent: '#00f5ff',
     links: {
@@ -19,8 +19,8 @@ const PROJECTS = [
     number: '02',
     title: 'GameHub — Online Indie Game Library',
     description:
-      'Built an indie game browsing platform with detailed game information and categories. Implemented secure Firebase Authentication (Email/Password + Google) with protected routes. Added profile update & password reset features with responsive UI using Tailwind CSS. Integrated Framer Motion animations and deployed securely with environment variables on Netlify/Firebase.',
-    tags: ['React.js', 'Firebase', 'Tailwind CSS', 'Framer Motion'],
+      'Built an indie game browsing platform with detailed game information and category-based navigation. Implemented secure Firebase Authentication with protected routes and added profile update & password reset features. Designed a responsive UI using Tailwind CSS, integrated Framer Motion animations, and deployed using Netlify/Firebase with environment variables.',
+    tags: ['React', 'Firebase Auth', 'Tailwind CSS', 'DaisyUI', 'Framer Motion'],
     icon: 'fas fa-gamepad',
     accent: '#b000ff',
     links: {
@@ -29,7 +29,6 @@ const PROJECTS = [
     },
   },
 ];
-
 interface Project {
   number: string;
   title: string;

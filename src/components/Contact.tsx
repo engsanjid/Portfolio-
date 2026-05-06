@@ -179,7 +179,7 @@ const handleSubmit = async (e: FormEvent) => {
                 </span>
               </div>
               <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                Seeking Junior Full Stack Developer role. Open for collaborative opportunities. Response within 24 hours.
+                Seeking Full Stack Developer role. Open for collaborative opportunities. Response within 24 hours.
               </p>
             </div>
           </div>

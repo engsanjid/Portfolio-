@@ -5,11 +5,11 @@ const TERMINAL_LINES = [
   { delay: 400,  type: 'prompt',  content: 'whoami' },
   { delay: 900,  type: 'output',  content: 'Md Sanjid Islam' },
   { delay: 1300, type: 'prompt',  content: 'cat skills.txt' },
-  { delay: 1800, type: 'green',   content: '✓ React.js  ✓ Node.js  ✓ MongoDB  ✓ Firebase' },
+  { delay: 1800, type: 'green',   content: '✓ Next.js ✓React ✓ Node.js  ✓ MongoDB  ✓ Firebase' },
   { delay: 2200, type: 'prompt',  content: 'echo $STATUS' },
-  { delay: 2700, type: 'yellow',  content: 'Seeking Junior Full Stack Developer role' },
+  { delay: 2700, type: 'yellow',  content: 'Seeking Full Stack Developer role' },
   { delay: 3100, type: 'prompt',  content: 'git log --oneline -1' },
-  { delay: 3600, type: 'output',  content: 'a3f91bc — Building scalable web apps with MERN stack' },
+  { delay: 3600, type: 'output',  content: 'a3f91bc — Building Modern web with MERN stack' },
 ];
 
 type LineType = 'prompt' | 'output' | 'green' | 'yellow';
@@ -118,8 +118,8 @@ export default function Hero() {
             </div>
 
             <p className="text-base leading-relaxed max-w-lg" style={{ color: 'var(--text-secondary)' }}>
-              Seeking a Junior Full Stack Developer role to build{' '}
-              <span style={{ color: 'var(--cyan)' }}>scalable web applications</span> using React, Node.js,
+              Seeking a Full Stack Developer role to build{' '}
+              <span style={{ color: 'var(--cyan)' }}>modern web applications</span> using Next.js, React, Node.js,
               and MongoDB while growing within a collaborative team from{' '}
               <span style={{ color: 'var(--teal)' }}>Dhaka, Bangladesh</span>.
             </p>

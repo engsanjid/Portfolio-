@@ -1,12 +1,12 @@
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const INFO_ITEMS = [
-  { icon: 'fas fa-graduation-cap', label: 'Education',   value: 'BSc in CSE — Dhaka International University | 2024–Present' },
-  { icon: 'fas fa-map-marker-alt', label: 'Location',    value: 'Dhaka, Bangladesh' },
-  { icon: 'fas fa-phone',          label: 'Phone',       value: '+8801745532902' },
-  { icon: 'fas fa-envelope',       label: 'Email',       value: 'mdsanjidi36@gmail.com' },
-  { icon: 'fab fa-github',         label: 'GitHub',      value: 'github.com/engsanjid' },
-  { icon: 'fab fa-linkedin',       label: 'LinkedIn',    value: 'linkedin.com/in/md-sanjid-islam/' },
+  { icon: 'fas fa-graduation-cap', label: 'Education',   value: 'BSc in CSE — Dhaka International University | 2024–Present', href: null },
+  { icon: 'fas fa-map-marker-alt', label: 'Location',    value: 'Dhaka, Bangladesh', href: null },
+  { icon: 'fas fa-phone',          label: 'Phone',       value: '+8801745532902', href: 'tel:+8801745532902' },
+  { icon: 'fas fa-envelope',       label: 'Email',       value: 'mdsanjidi36@gmail.com', href: 'mailto:mdsanjidi36@gmail.com' },
+  { icon: 'fab fa-github',         label: 'GitHub',      value: 'github.com/engsanjid', href: 'https://github.com/engsanjid' },
+  { icon: 'fab fa-linkedin',       label: 'LinkedIn',    value: 'linkedin.com/in/md-sanjid-islam/', href: 'https://linkedin.com/in/md-sanjid-islam/' },
 ];
 
 export default function About() {
@@ -51,16 +51,16 @@ export default function About() {
               </div>
             </div>
 
-            <p className="leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-              Seeking a Junior Full Stack Developer role to build{' '}
-              <span style={{ color: 'var(--cyan)' }}>scalable web applications</span> using React, Node.js,
-              and MongoDB while growing within a collaborative team.
-            </p>
-            <p className="leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-              I've developed projects like <span style={{ color: 'var(--teal)' }}>HomeNest</span> (a full-stack real estate platform)
-              and <span style={{ color: 'var(--teal)' }}>GameHub</span> (an indie game library), showcasing my skills in
-              React, Node.js, and MongoDB.
-            </p>
+          <p className="leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+  Seeking a Full Stack Developer role to build{' '}
+  <span style={{ color: 'var(--cyan)' }}>modern web applications</span> using React, Next.js, Node.js,
+  MongoDB, Firebase, and Tailwind CSS.
+</p>
+       <p className="leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+  I've developed projects like <span style={{ color: 'var(--teal)' }}>HomeNest</span> (a full-stack real estate platform with Next.js, Node.js, and MongoDB)
+  and <span style={{ color: 'var(--teal)' }}>GameHub</span> (an indie game library with React and Firebase), showcasing my skills in
+  React, Next.js, Node.js, MongoDB, and Firebase.
+</p>
 
             <div className="flex flex-wrap gap-2 pt-2">
               {['React.js', 'Next.js', 'HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'Firebase', 'GitHub', 'VS Code', 'Netlify', 'Vercel'].map((t) => (
@@ -78,49 +78,66 @@ export default function About() {
 </a>
 </div>
           <div ref={rightRef} className="reveal-right space-y-3">
-            {INFO_ITEMS.map((item) => (
-              <div
-                key={item.label}
-                className="flex items-center gap-4 p-4 rounded-xl transition-all duration-300"
-                style={{
-                  background: 'rgba(10,10,28,0.5)',
-                  border: '1px solid rgba(0,245,255,0.08)',
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,245,255,0.3)';
-                  (e.currentTarget as HTMLElement).style.background = 'rgba(0,245,255,0.04)';
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,245,255,0.08)';
-                  (e.currentTarget as HTMLElement).style.background = 'rgba(10,10,28,0.5)';
-                }}
-              >
+            {INFO_ITEMS.map((item) => {
+              const content = (
                 <div
-                  className="w-9 h-9 rounded-lg flex items-center justify-center text-sm flex-shrink-0"
+                  key={item.label}
+                  className="flex items-center gap-4 p-4 rounded-xl transition-all duration-300"
                   style={{
-                    background: 'rgba(0,245,255,0.08)',
-                    color: 'var(--cyan)',
-                    border: '1px solid rgba(0,245,255,0.15)',
+                    background: 'rgba(10,10,28,0.5)',
+                    border: '1px solid rgba(0,245,255,0.08)',
+                    cursor: item.href ? 'pointer' : 'default',
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,245,255,0.3)';
+                    (e.currentTarget as HTMLElement).style.background = 'rgba(0,245,255,0.04)';
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,245,255,0.08)';
+                    (e.currentTarget as HTMLElement).style.background = 'rgba(10,10,28,0.5)';
                   }}
                 >
-                  <i className={item.icon} />
-                </div>
-                <div className="min-w-0">
-                  <p
-                    className="text-xs mb-0.5 tracking-wider uppercase"
-                    style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}
+                  <div
+                    className="w-9 h-9 rounded-lg flex items-center justify-center text-sm flex-shrink-0"
+                    style={{
+                      background: 'rgba(0,245,255,0.08)',
+                      color: 'var(--cyan)',
+                      border: '1px solid rgba(0,245,255,0.15)',
+                    }}
                   >
-                    {item.label}
-                  </p>
-                  <p
-                    className="text-sm font-medium truncate"
-                    style={{ color: 'var(--text-primary)' }}
-                  >
-                    {item.value}
-                  </p>
+                    <i className={item.icon} />
+                  </div>
+                  <div className="min-w-0">
+                    <p
+                      className="text-xs mb-0.5 tracking-wider uppercase"
+                      style={{ color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}
+                    >
+                      {item.label}
+                    </p>
+                    <p
+                      className="text-sm font-medium truncate"
+                      style={{ color: item.href ? 'var(--cyan)' : 'var(--text-primary)' }}
+                    >
+                      {item.value}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+
+              return item.href ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target={item.href.startsWith('http') ? '_blank' : undefined}
+                  rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  style={{ textDecoration: 'none', display: 'block' }}
+                >
+                  {content}
+                </a>
+              ) : (
+                <div key={item.label}>{content}</div>
+              );
+            })}
           </div>
         </div>
       </div>
