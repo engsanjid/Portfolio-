@@ -78,6 +78,8 @@ const handleSubmit = async (e: FormEvent) => {
       {
         from_name:  form.name,
         from_email: form.email,
+        from_initial: form.name.charAt(0).toUpperCase(),
+        year: new Date().getFullYear().toString(),
         subject:    form.subject || 'No Subject',
         message:    form.message,
       },
